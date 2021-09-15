@@ -17,6 +17,12 @@ async function copyTemplateFiles(options) {
     });
 }
 
+async function copyPublicFiles(options) {
+    return copy(`${options.templateDirectory}/public`, `${options.targetDirectory}/${options.projectName}/public`, {
+        clobber: false
+    });
+}
+
 async function initGit(options) {
     const result = await execa('git', ['init'], {
         cwd: `${options.targetDirectory}/${options.projectName}`
@@ -72,7 +78,7 @@ export async function createProject(options) {
         },
         {
             title: "Install Supabase",
-            task: () => execao('npm', ['install', 'supabase'], {
+            task: () => execao('npm', ['install', '@supabase/supabase-js'], {
                 cwd: `${options.targetDirectory}/${options.projectName}`
             }),
         },
