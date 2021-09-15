@@ -1,0 +1,32 @@
+{
+  "name": "create-next-supabase",
+  "version": "1.0.3",
+  "description": "Create NextJS Projects with Typescript by default, and a preset supabase environment",
+  "main": "src/index.js",
+  "bin": {
+    "create-next-supabase": "bin/create-next-supabase"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cli",
+    "create-next-supabase"
+  ],
+  "author": "Ben White",
+  "license": "ISC",
+  "dependencies": {
+    "arg": "^5.0.1",
+    "esm": "^3.2.25",
+    "execa": "^1.0.0",
+    "execa-output": "^2.0.0",
+    "inquirer": "^8.1.4",
+    "listr": "^0.14.3",
+    "ncp": "^2.0.0",
+    "pkg-install": "^1.0.0",
+    "supabase": "^0.5.0"
+  }
+}
