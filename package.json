@@ -1,6 +1,6 @@
 {
   "name": "create-next-supabase",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Create NextJS Projects with Typescript by default, and a preset supabase environment",
   "main": "src/index.js",
   "bin": {
